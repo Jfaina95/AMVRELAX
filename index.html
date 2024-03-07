@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pintos Maria Josefina - Final Maquetado y desarrollo web</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+  <header class="container-fluid bg-light fixed-top">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg py-0">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><img src="img/logo.png" class="img-fluid w-30"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Meditacion">Meditacion</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Yoga">Yoga</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Contacto">Contacto</a>
+                </li>
+                    </ul>
+              </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<section id="bannerprincipal" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/banner1.jpg" class="d-block w-100" alt="banner">
+      </div>
+      <div class="carousel-item">
+        <img src="img/banner-2.jpg" class="d-block w-100" alt="banner">
+      </div>
+      <div class="carousel-item">
+        <img src="img/banner-3.jpg" class="d-block w-100" alt="banner">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#bannerprincial" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#bannerprincipañ" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+</section>
+<main class="container py-5" id="Meditacion">
+    <section class="row pt-5">
+        <article class="col-12 col-md-6 py-4 order-1 order-md-0">
+            <h1><strong>Meditación</strong></h1>
+            <p>AMV Relax es una aplicación de sonorización para la meditación. En ella se encuentran diversos instrumentos y universos que nos permiten llegar a un mejor climax a la hora de meditar.</p>
+            <p>Su particularidad es que una aplicación mucho más sencilla y minimalista que el resto de este tipo de aplicaciónes. Yendo mucho más al grano y permitiendo que la pausa sea cuando el usuario lo prefiera</p>
+            <p>A su vez, segun tu fecha de nacimiento personaliza los mantras que utilices. Siendo tambien una aplicación astrologica.</p>
+        </article>
+        <article class="col-12 col-md-6 py-4 text-center">
+          <img src="img/Logocompleto.png" alt="Logocompleto" class="img-fluid">
+          <article class="nb-3 py-4">
+              <button type="button" class="btn btn-primary" onclick="descargarArchivo()"> Descargar</button>
+          </article>
+      </article>
+      <script>
+        function descargarArchivo() {
+            var link = document.createElement('a');
+            link.href = '/archivo_descarga.txt';
+            link.download = 'archivo_descarga.txt';
+            link.click();
+        }
+    </script>
+          
+    </section>
+    <section class="row pt-5">
+        <article class="col-12 col-md-6 text-center">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/hTKDQ5FRB18"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article>
+        <article class="col-12 col-md-6 order-0 order-md-1">
+            <p>Practicada por los monjes budistas desde hace miles de años, esta disciplina ancestral se está extendiendo por el mundo moderno.</p>
+            <p>Se ha demostrado que algunos de los beneficios de la meditación son la reducción de la tensión muscular, la disminución de la presión sanguínea y la mejora del ritmo cardíaco, ¡e incluso mejora las ondas cerebrales!</p>
+            <p>La meditación influye positivamente en la materia gris de nuestro cerebro, dedicada al control de las emociones y las respuestas. ¿El resultado? Una mayor concentración, un mejor aprendizaje y una memoria más aguda.</p>
+        </article>
+    </section>
+</main>
+
+<section class="container-fluid parallax-window py-5" id="Yoga" data-parallax="scroll" data-image-src="img/fondo.jpg">
+  <div class="container">
+      <div class="row">
+          <div class="col-12 col-md-6 col-lg-6 py-4 pt-md-0 text-center">
+              <div class="card h-100 d-block">
+                  <img src="img/yoga2.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h3 class="card-title">Yoga restaurativo</h3>
+                      <p class="card-text">El yoga restaurativo es un tipo de yoga terapéutico cuya finalidad es el descanso del sistema nervioso. Se realiza mediante asanas (posturas) suaves y pasivas, apacibles y relajadas, diseñadas para que las cadenas musculares de nuestro cuerpo se aflojen, y se despierten los mecanismos propios de la relajación.</p>
+                      <a href="#" class="btn btn-primary">Más información</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6 py-4 pt-md-0 text-center">
+              <div class="card h-100 d-block">
+                  <img src="img/yoga1.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h2 class="card-title">Hatha yoga</h2>
+                      <p class="card-text">En sánscrito, 'Hatha yoga' significa disciplina de fuerza, una fuerza que busca el equilibrio de las polaridades que se hallan en nuestro interior. De hecho, ha significa sol y representa la energía más activa y tha, luna, que se vincula la relajación y al descanso.</p>
+                      <a href="#" class="btn btn-primary">Más información</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-12 col-md-6 col-lg-6 py-4 pt-md-0 text-center">
+              <div class="card h-100 d-block">
+                  <img src="img/yoga4.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">Los mejores mantras</h5>
+                      <p class="card-text">Algunos de los mantras más poderosos están en sánscrito, un idioma indo-ario que se remonta aproximadamente al 1.500-200 AEC.</p>
+                      <a href="#" class="btn btn-primary">Más información</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6 py-4 pt-md-0 text-center">
+              <div class="card h-100 d-block">
+                  <img src="img/yoga3.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h4 class="card-title">Espacios de encuentro</h4>
+                      <p class="card-text">Mejora tu postura, reduce los dolores de espalda, cuello y el malestar general. Correcto uso del cuerpo, alineación adecuada y desarrollo de la conciencia</p>
+                      <a href="#" class="btn btn-primary">Más información</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="container">
+    <div id="Contacto" class="row">
+    <article class="col-12 col-md-6 order-1 order-md-0">
+        <img src="img/publi01.jpg" alt="publicidad" class="img-fluid">
+    </article>
+    <article class="col-12 col-md-6 order-0 order-md-1">
+        <div class="border-1 p-5 m-5">
+            <form action="gracias.html">
+                <h6 class="mb-4">Contacto</h6>
+                <article class="mb-3">
+                    <label for="Nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="Nombre" placeholder="Nombre" required>
+                </article>
+                <article class="mb-3">
+                    <label for="Apellido" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="Apellido" placeholder="Apellido" required>
+                </article>
+                <article class="mb-3">
+                    <label for="Email" class="form-label">Email</label>
+                    <input type="mail" class="form-control" id="Email" placeholder="Email" required>
+                </article>
+                <article class="mb-3">
+                    <label for="Telefono" class="form-label">Telefono</label>
+                    <input type="number" class="form-control" id="Telefono" placeholder="Telefono" required>
+                </article>
+                  <article class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Formulario</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </article>
+                  <article class="nb-3">
+                    <button type="submit" class="btn btn-primary"> Enviar</button>
+                  </article>
+            </form>
+        </div>
+        </article>
+    </div>
+</section>
+<footer class="container-fluid py-2">
+  <div class="container">
+<section class="row">
+  <article class="col-12 col-md-6 text-center text-md-star">
+    <p class="mb:0"> Maria Josefina Pintos. Turno Lunes 19 hs. Maquetado y dasarrollo web. 2022</p>
+  </article>
+<article class="col-12 col-md-6 text-center text-md-end">
+<a href="" target="_blank" class="text-black"><i class="fa-brands fa-instagram fa-lg"></i></a>
+<a href="" target="_blank" class="text-black px-3"><i class="fa-brands fa-facebook fa-lg"></i></a>
+<a href="" target="_blank" class="text-black"><i class="fa-brands fa-app-store fa-lg"></i></a>
+</article>
+</section>
+  </div>
+</footer>
+   <script src="js/jquery-3.6.1.min.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/parallax.min.js"></script>
+   <script src="js/all.min.js"></script>
+</body>
+</html>
